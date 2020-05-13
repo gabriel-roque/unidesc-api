@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="#"/>
+  <img src="https://raw.githubusercontent.com/gabriel-roque/design/master/unidesc-api.png" width="450"/>
 </p>
 
 <hr>
