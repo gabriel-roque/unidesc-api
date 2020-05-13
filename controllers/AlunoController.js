@@ -23,17 +23,17 @@ module.exports = {
     const filter = { _id: request.params.id };
     const update = { ...request.body };
 
-    let todo = await Aluno.findOneAndUpdate(filter, update, { new: true });
+    let aluno = await Aluno.findOneAndUpdate(filter, update, { new: true });
 
-    return response.status(200).send({ ...apibody, todo });
+    return response.status(200).send({ ...apibody, aluno });
   },
 
   async destroy(request, response) {
     const filter = { _id: request.params.id };
 
-    let todo = await Aluno.findByIdAndDelete(filter);
+    let aluno = await Aluno.findByIdAndDelete(filter);
 
-    if (todo === null)
+    if (aluno === null)
       return response
         .status(404)
         .send({ ...apibody, error: 'Aluno não encontrado.' });
