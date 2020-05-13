@@ -1,0 +1,412 @@
+{
+	"info": {
+		"_postman_id": "8d036874-0ed6-45ba-9780-5d111a9993a6",
+		"name": "unidesc-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Aluno",
+			"item": [
+				{
+					"name": "GET Alunos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/alunos",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"alunos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Aluno",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Maverik Douglas\",\n\t\"matricula\": 235646,\n\t\"semestre\": 4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/alunos",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"alunos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE Aluno",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Maverik Douglas EDIT\",\n\t\"matricula\": 235646,\n\t\"semestre\": 4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/alunos/5ebbf94c673ba541f7e2ea9f",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"alunos",
+								"5ebbf94c673ba541f7e2ea9f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Aluno",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Maverik Douglas EDIT\",\n\t\"matricula\": 235646,\n\t\"semestre\": 4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/alunos/5ebbfb559eb6e244a2f141e7",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"alunos",
+								"5ebbfb559eb6e244a2f141e7"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Professor",
+			"item": [
+				{
+					"name": "GET Professor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/professores",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"professores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Professor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Matheus Ramon\",\n\t\"matricula\": 235646,\n\t\"telefone\": \"+55912344567\",\n\t\"email\": \"matheus@gmail.com\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/professores",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"professores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE Professor",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Matheus Ramon EDIT\",\n\t\"matricula\": 235646,\n\t\"telefone\": \"+55912344567\",\n\t\"email\": \"matheus@gmail.com\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/professores/5ebc05e1f0a4861419e2f5e7",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"professores",
+								"5ebc05e1f0a4861419e2f5e7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Professor",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Maverik Douglas EDIT\",\n\t\"matricula\": 235646,\n\t\"semestre\": 4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/professores/5ebc05e1f0a4861419e2f5e7",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"professores",
+								"5ebc05e1f0a4861419e2f5e7"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Turma",
+			"item": [
+				{
+					"name": "GET Turma",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/turmas",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"turmas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Turma",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"codigo\": 54564,\n    \"lider\": \"Gabriel Roque\",\n    \"email\": \"gabriel@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/turmas",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"turmas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE Turma",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"codigo\": 54564,\n    \"lider\": \"Gabriel Roque EDIT\",\n    \"email\": \"gabriel@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/turmas/5ebc13d4f8f1ef2b01d31753",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"turmas",
+								"5ebc13d4f8f1ef2b01d31753"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Turma",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Maverik Douglas EDIT\",\n\t\"matricula\": 235646,\n\t\"semestre\": 4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/turmas/5ebc13d4f8f1ef2b01d31753",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"turmas",
+								"5ebc13d4f8f1ef2b01d31753"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a56ca7e2-424f-4bda-b4a8-98911f3b4c01",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b9085208-c65a-4fd1-aed9-78f0ad380ca1",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "c433971a-581d-4d24-964f-4268a2c7b1fe",
+			"key": "baseurl",
+			"value": "http://localhost:3000/v1/api",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
