@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -8,7 +10,7 @@ const routes = require('./routes');
 
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017/unidesc', {
+mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,
@@ -18,6 +20,6 @@ mongoose.connect('mongodb://localhost:27017/unidesc', {
 middlewares(app);
 app.use(cors());
 app.use(express.json());
-app.use(`${versionApi.uri.baseURl}`, routes);
+app.use(`${versionApi.uri.baseURL}`, routes);
 
-app.listen(3333);
+app.listen(3000);

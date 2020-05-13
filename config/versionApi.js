@@ -2,7 +2,7 @@ const VERSION = 'v1';
 
 const uri = {
   version: VERSION,
-  baseURl: `/${VERSION}/api`,
+  baseURL: `/${VERSION}/api`,
 };
 
 const header = {
