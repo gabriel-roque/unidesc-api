@@ -2,6 +2,10 @@
   <img src="#"/>
 </p>
 
+* [Resource Alunos](#-resource-alunos)
+* [Resource Professores](#-resource-professores)
+* [Resource Turmas](#-resource-turmas)
+
 <hr>
 
 ## :bulb: Introduction
