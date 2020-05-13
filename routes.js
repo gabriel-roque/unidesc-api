@@ -1,4 +1,8 @@
+require('dotenv').config();
+
 const { Router } = require('express');
+const { uri } = require('./config/versionApi');
+
 const routes = Router();
 
 const AlunoController = require('./controllers/AlunoController');
@@ -19,5 +23,9 @@ routes.get('/turmas', TurmaController.index);
 routes.post('/turmas', TurmaController.store);
 routes.put('/turmas/:id', TurmaController.update);
 routes.delete('/turmas/:id', TurmaController.destroy);
+
+routes.get('/', function (request, response) {
+  response.redirect(`${process.env.APP_URL}${uri.baseURL}/alunos`);
+});
 
 module.exports = routes;
