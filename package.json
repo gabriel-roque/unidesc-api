@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "unidesc-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,9 +8,12 @@
     "prod": "pm2 start ecosystem.config.js --no-daemon",
     "stop": "pm2 stop unidesc-api"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "unidesc",
+    "api"
+  ],
+  "author": "gabriel-roque",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.19.1",
     "cors": "^2.8.5",
