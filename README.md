@@ -12,7 +12,7 @@
 
 ## :bulb: Introduction
 
-A simple API UNIDESC for using in mobile app Ionic 4 starter with (Node.JS, MongoDB)
+A simple API UNIDESC for using in mobile app Ionic 4 starter with (MongoDB, Node.JS and ExpressJS)
 
 ## :memo: Minimal Requirements
 
