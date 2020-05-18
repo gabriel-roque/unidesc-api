@@ -42,9 +42,9 @@ $ npm run dev
 
 ### 🎓 Resource Alunos
 
-**GET** `/v1/api/alunos`
+✅ **GET** `/v1/api/alunos`
 
-**Response**
+↩ **Response**
 
 ```json
 {
@@ -64,29 +64,9 @@ $ npm run dev
 
 <br>
 
-**POST** `/v1/api/alunos`
+✅ **POST** `/v1/api/alunos`
 
-**Request**
-
-```json
-{
-  "nome": "Maverik Douglas",
-  "matricula": 235646,
-  "semestre": 4
-}
-```
-
-| Attribute | Type     |
-| --------- | -------- |
-| nome      | `String` |
-| matricula | `Number` |
-| semestre  | `Number` |
-
-<br>
-
-**PUT** `/v1/api/alunos/:id`
-
-**Request**
+➡ **Request**
 
 ```json
 {
@@ -104,9 +84,29 @@ $ npm run dev
 
 <br>
 
-**DELETE** `/v1/api/alunos/:id`
+✅ **PUT** `/v1/api/alunos/:id`
 
-**Response**
+➡ **Request**
+
+```json
+{
+  "nome": "Maverik Douglas",
+  "matricula": 235646,
+  "semestre": 4
+}
+```
+
+| Attribute | Type     |
+| --------- | -------- |
+| nome      | `String` |
+| matricula | `Number` |
+| semestre  | `Number` |
+
+<br>
+
+✅ **DELETE** `/v1/api/alunos/:id`
+
+↩ **Response**
 
 ```json
 {
@@ -120,9 +120,9 @@ $ npm run dev
 
 ### 👩‍🏫 Resource Professores
 
-**GET** `/v1/api/professores`
+✅ **GET** `/v1/api/professores`
 
-**Response**
+↩ **Response**
 
 ```json
 {
@@ -143,9 +143,9 @@ $ npm run dev
 
 <br>
 
-**POST** `/v1/api/professores`
+✅ **POST** `/v1/api/professores`
 
-**Request**
+➡ **Request**
 
 ```json
 {
@@ -165,9 +165,9 @@ $ npm run dev
 
 <br>
 
-**PUT** `/v1/api/professores/:id`
+✅ **PUT** `/v1/api/professores/:id`
 
-**Request**
+➡ **Request**
 
 ```json
 {
@@ -187,9 +187,9 @@ $ npm run dev
 
 <br>
 
-**DELETE** `/v1/api/professores/:id`
+✅ **DELETE** `/v1/api/professores/:id`
 
-**Response**
+↩ **Response**
 
 ```json
 {
@@ -203,9 +203,9 @@ $ npm run dev
 
 ### 📙 Resource Turmas
 
-**GET** `/v1/api/turmas`
+✅ **GET** `/v1/api/turmas`
 
-**Response**
+↩ **Response**
 
 ```json
 {
@@ -225,9 +225,9 @@ $ npm run dev
 
 <br>
 
-**POST** `/v1/api/turmas`
+✅ **POST** `/v1/api/turmas`
 
-**Request**
+➡ **Request**
 
 ```json
 {
@@ -245,9 +245,9 @@ $ npm run dev
 
 <br>
 
-**PUT** `/v1/api/turmas/:id`
+✅ **PUT** `/v1/api/turmas/:id`
 
-**Request**
+➡ **Request**
 
 ```json
 {
@@ -265,9 +265,9 @@ $ npm run dev
 
 <br>
 
-**DELETE** `/v1/api/turmas/:id`
+✅ **DELETE** `/v1/api/turmas/:id`
 
-**Response**
+↩ **Response**
 
 ```json
 {
