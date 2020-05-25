@@ -1,13 +1,15 @@
 require('dotenv').config();
 
 const { Router } = require('express');
-const { uri } = require('./config/versionApi');
 
 const routes = Router();
 
+const MainController = require('./controllers/MainController');
 const AlunoController = require('./controllers/AlunoController');
 const ProfessorController = require('./controllers/ProfessorController');
 const TurmaController = require('./controllers/TurmaController');
+
+routes.get('/', MainController.index);
 
 routes.get('/alunos', AlunoController.index);
 routes.post('/alunos', AlunoController.store);
@@ -23,9 +25,5 @@ routes.get('/turmas', TurmaController.index);
 routes.post('/turmas', TurmaController.store);
 routes.put('/turmas/:id', TurmaController.update);
 routes.delete('/turmas/:id', TurmaController.destroy);
-
-routes.get('/', function (request, response) {
-  response.redirect(`${process.env.APP_URL}${uri.baseURL}/alunos`);
-});
 
 module.exports = routes;
