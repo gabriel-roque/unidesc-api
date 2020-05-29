@@ -2,6 +2,17 @@
   <img src="https://raw.githubusercontent.com/gabriel-roque/design/master/unidesc-api.png" width="450"/>
 </p>
 
+<p align="center">
+ <a href="https://expressjs.com/"><img src="https://img.shields.io/badge/Express-4.x-blue"></a>
+  <a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/Node-12.x-green"></a>
+  <a href="https://www.npmjs.com/"><img src="https://img.shields.io/badge/Npm-6.x-red"></a>
+  <a href="https://mongoosejs.com/"><img src="https://img.shields.io/badge/Mongoose-5.x-orange"></a>
+</p>
+
+<p align="center">
+   <a href="https://unidesc-api.herokuapp.com/v1/api"><img src="https://raw.githubusercontent.com/gabriel-roque/design/master/btn-open-api.png" width="200"></a>
+</p>
+
 <hr>
 
 ## ⚓ Summary
@@ -287,11 +298,14 @@ $ npm run dev
 
 ## 👤 Authors
 
-| Gabriel Roque                                                                       |
-| ----------------------------------------------------------------------------------- |
-| <img src="https://avatars2.githubusercontent.com/u/32438220?s=460&v=4" width="110"> |
-| <a href="https://github.com/gabriel-roque">Github</a>                               |
-| <a href="https://www.linkedin.com/in/gabriel-roque/">Linkedin</a>                   |
+<p align="center">
+  <a href="https://www.linkedin.com/in/gabriel-roque/">
+    <img src="https://github.com/gabriel-roque/design/blob/master/banner-contato-left.png?raw=true" width="400">
+  </a>
+  <a href="https://github.com/gabriel-roque">
+    <img src="https://github.com/gabriel-roque/design/blob/master/banner-contato-right.png?raw=true" width="343">
+  </a>
+</p>
 
 ## 🤝 Contributing
 
